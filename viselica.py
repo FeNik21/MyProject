@@ -25,9 +25,9 @@ print('_' * num_word)
 #цикл ввода буквы
 for let in word:
     letter = str(input('Введите латинскую букву: '))
-    print('_' * num_word)
+    print(letter+ '_' )
     if letter == let:
-        print(letter)
+        print(letter + '_' * num_word)
     elif letter != let:
         print("Не угадал")
         life -= 1
@@ -35,6 +35,7 @@ for let in word:
     if life == 0:
         print('Игра окончена')
         break
+        print('Ты выиграл')
     continue
-
+#на данном моменте если делаешь ошибку то надо ввести через букву то есть т_ле_он
 
